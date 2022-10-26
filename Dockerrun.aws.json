@@ -1,17 +1,13 @@
 {
-  "AWSEBDockerrunVersion": "2",
-  "containerDefinitions": [
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "cyjay96/pipeline-one-docker-container",
+    "Update": "true"
+  },
+  "Ports": [
     {
-      "name": "pipeline-one-docker-container",
-      "image": "cyjay96/pipeline-one-docker-container",
-      "essential": true,
-      "portMappings": [
-        {
-          "containerPort": 8080,
-          "hostPort": 80
-        }
-      ],
-      "memory": 512
+      "hostPort": 8080,
+      "containerPort": 8080
     }
   ]
 }
