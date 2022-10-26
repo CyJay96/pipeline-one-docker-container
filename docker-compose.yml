@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  pipeline-one-docker-container:
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    image: cyjay96/pipeline-one-docker-container
+    ports:
+      - "8080:8080"
